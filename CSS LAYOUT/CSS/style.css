@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #747474;
+}
+
+/* Navbar */
+
+.logo {
+  width: 268px;
+  height: 33px;
+}
+
+.link,
+.dropdown {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.main_header {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.navbar_content {
+  background-color: white;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: white;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.navLinks {
+  padding-right: 120px;
+}
+
+.logo_div {
+  padding-left: 120px;
+}
+
+.drp {
+  list-style: none;
+}
+
+.main_menu a {
+  color: #ababab;
+  padding-inline-start: 0px;
+}
+
+.main_menu a:hover {
+  color: #00b39b;
+  cursor: pointer;
+}
+
+span {
+  color: #00b39b;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  cursor: pointer;
+  position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  padding-top: 10px;
+  position: absolute;
+  min-width: 240px;
+  margin-left: -100px;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 #d3cfc9;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #ababab;
+  padding: 12px 16px !important;
+  text-decoration: none;
+  display: block;
+  width: 87%;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #00b39b;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Title_section */
+
+.title_section {
+  margin-top: 120px;
+  display: block;
+}
+
+.icon {
+  display: block;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  width: 40px;
+  height: 39px;
+}
+
+.titre {
+  text-align: center;
+  color: #00b39b;
+  font-size: 2.125rem;
+  font-weight: 300;
+}
+
+/* Paragraph_section */
+
+.paragraph_section {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 10%;
+}
+
+.paragraph_section div {
+  margin: 0px 10px;
+}
+
+.paragraph_section div p {
+  line-height: 1.75;
+}
+
+/* Cards_section */
+
+.cards_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px 10%;
+  color: white;
+}
+
+.img_card {
+  width: 400px;
+  height: auto;
+}
+
+.card1 {
+  background-color: #00ccb1;
+  margin: 0 10px;
+  width: 497px;
+  border-radius: 10px;
+  padding-left: 40px;
+}
+
+.card2 {
+  background-color: #3d83df;
+  margin: 0 10px;
+  width: 497px;
+  border-radius: 10px;
+  padding-left: 40px;
+}
+
+.image_card {
+  max-width: 300px;
+  position: relative;
+  left: 145.5px;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0.7em 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.card1 h1,
+.card2 h1 {
+  width: 380px;
+}
+
+#country {
+  border: transparent;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.card1 h2,
+.card2 h2 {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.3px;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.7);
+  margin-top: 20px;
+}
+
+/* Brands section */
+
+.brands_section {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5rem auto 3.125rem;
+}
+
+.brand_title {
+  margin-left: 10%;
+  width: 200px;
+  color: #00b39b;
+}
+
+.brands {
+  margin-top: 15px;
+}
+
+.brands ul {
+  float: left;
+  font-size: 0;
+  width: 80%;
+  list-style: none;
+}
+
+.brands ul li {
+  font-size: 1rem;
+  display: inline-block;
+  width: 168px;
+  padding: 5px 0;
+}
+
+.brands ul svg {
+  height: 20px;
+  width: auto;
+  max-width: 100%;
+  padding-left: 50px;
+  color: #747474;
+}
+
+/* Stats section */
+
+/* left Stats section */
+
+.stats_section {
+  background-color: #defcf9;
+  display: flex;
+  margin: 2.5rem auto 3.125rem;
+  height: 600px;
+}
+
+.left_stats_section {
+  margin-left: 10%;
+}
+
+.left_stats_section h1 {
+  width: 300px;
+  color: #00b39b;
+}
+
+.left_stats_section p {
+  max-width: 415px;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1.7142857143;
+}
+
+.logo_stat {
+  padding-top: 30px;
+  position: relative;
+  right: 139px;
+  top: -4px;
+}
+
+.icon1 {
+  width: 450px;
+  height: 436px;
+  max-height: 380;
+  overflow: hidden;
+}
+
+/* Right Stats section */
+
+.right_stats_section {
+  display: flex;
+}
+
+.stat {
+  width: 229px;
+  height: 250px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.stat_content > * {
+  margin: 0.7em 0;
+}
+
+.first_column {
+  margin-top: 55px;
+  margin-right: 20px;
+}
+
+.second_column {
+  margin-top: 30px;
+}
+
+.stat_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 0.8125em;
+}
+
+.stat_content h3 {
+  font-size: 1.8461538462em;
+  color: #00b39b;
+  margin: 0.5em 0;
+}
+
+/* Offices section */
+
+.offices_section {
+  margin-top: 5.5rem;
+  margin-bottom: 5rem;
+}
+
+.offices_header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.875em;
+  margin: 0 auto 4.1875rem;
+}
+
+.offices_header h1 {
+  font-size: 2.1428571429em;
+  color: #00b39b;
+}
+
+.offices_header p {
+  line-height: 1.7142857143;
+}
+
+.offices_cards {
+  width: 995px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10%;
+}
+
+.offices_card {
+  width: 309px;
+  height: 350px;
+  margin: 0 0 15px 15px;
+  border: 0.1px lightgray solid;
+  border-radius: 5px;
+}
+
+.offices_card:hover {
+  box-shadow: lightgray;
+}
+
+.offices_card img {
+  width: 309px;
+  height: 278px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.offices_card h3 {
+  margin: 5px 10px;
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+.offices_card div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.1111111111em;
+}
+
+.offices_card button {
+  border: transparent;
+  background-color: #3d83df;
+  border-radius: 5px;
+  padding: 3px 10px;
+  color: white;
+}
+
+.offices_cards a {
+  text-decoration: none;
+  color: #747474;
+}
+
+/* Footer */
+
+.footer_section {
+  border-top: 1px solid #eef2f2;
+  font-size: 0.75em;
+  color: #ababab;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.footer > * {
+  text-align: center;
+  margin: 10px 0;
+}
